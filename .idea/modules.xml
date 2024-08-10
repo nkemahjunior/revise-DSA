@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/DSA Java.iml" filepath="$PROJECT_DIR$/DSA Java.iml" />
+      <module fileurl="file://$PROJECT_DIR$/_00_unionFind/_00_unionFind.iml" filepath="$PROJECT_DIR$/_00_unionFind/_00_unionFind.iml" />
+      <module fileurl="file://$PROJECT_DIR$/_01_ThreeSum/_01_ThreeSum.iml" filepath="$PROJECT_DIR$/_01_ThreeSum/_01_ThreeSum.iml" />
+      <module fileurl="file://$PROJECT_DIR$/_03_BinarySearch/_03_BinarySearch.iml" filepath="$PROJECT_DIR$/_03_BinarySearch/_03_BinarySearch.iml" />
+      <module fileurl="file://$PROJECT_DIR$/_04_Arrays/_04_Arrays.iml" filepath="$PROJECT_DIR$/_04_Arrays/_04_Arrays.iml" />
+      <module fileurl="file://$PROJECT_DIR$/_05_SingleLinkedList/_05_SingleLinkedList.iml" filepath="$PROJECT_DIR$/_05_SingleLinkedList/_05_SingleLinkedList.iml" />
+    </modules>
+  </component>
+</project>
