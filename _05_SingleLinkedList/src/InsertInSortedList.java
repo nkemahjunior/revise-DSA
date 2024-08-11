@@ -1,35 +1,37 @@
-public class DeleteLastNode {
+public class InsertInSortedList {
 
     private static ListNode head;
     private  static ListNode second;
     private  static ListNode third;
     private  static ListNode fourth;
 
-    private static  ListNode deleteLastNode(){
+   public static  void  insertInSortedList(int data){
 
+        if(head == null) return;
 
-        if(head == null || head.next == null){
-            return head;
-        }
+        ListNode node = new ListNode(data);
 
         ListNode current = head;
         ListNode previous = null;
-        while(current.next != null){
+        while(current.next != null && current.data < data ){
             previous = current;
             current = current.next;
         }
 
-        previous.next = null;
-        return  current;
+
+        node.next = current;
+        previous.next = node;
+
     }
+
 
     public static void main(String[] args) {
         PrintLinkedListElements print = new PrintLinkedListElements();
 
         head = new ListNode(11);
         second = new ListNode(12);
-        third = new ListNode(13);
-        fourth = new ListNode(14);
+        third = new ListNode(25);
+        fourth = new ListNode(26);
 
 
 
@@ -38,8 +40,8 @@ public class DeleteLastNode {
         second.next = third; // // 10 -> 1 -> 8
         third.next = fourth; // // 10 -> 1 -> 8 -> 11 -> null
 
-       ListNode deletedNode = deleteLastNode();
+       insertInSortedList(16);
+
         print.printLinkedListElements(head);
-        System.out.println("deleted node is " + deletedNode.data);
     }
 }

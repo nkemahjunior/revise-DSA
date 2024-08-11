@@ -1,27 +1,26 @@
-public class DeleteLastNode {
+public class SearchElement {
 
     private static ListNode head;
     private  static ListNode second;
     private  static ListNode third;
     private  static ListNode fourth;
 
-    private static  ListNode deleteLastNode(){
+    private static  boolean  searchElement(int searchKey){
 
 
-        if(head == null || head.next == null){
-            return head;
-        }
 
         ListNode current = head;
-        ListNode previous = null;
         while(current.next != null){
-            previous = current;
+
+            if(current.data == searchKey){
+                return true;
+            }
             current = current.next;
         }
 
-        previous.next = null;
-        return  current;
+        return false;
     }
+
 
     public static void main(String[] args) {
         PrintLinkedListElements print = new PrintLinkedListElements();
@@ -38,8 +37,9 @@ public class DeleteLastNode {
         second.next = third; // // 10 -> 1 -> 8
         third.next = fourth; // // 10 -> 1 -> 8 -> 11 -> null
 
-       ListNode deletedNode = deleteLastNode();
+        boolean found = searchElement(138);
         print.printLinkedListElements(head);
-        System.out.println("deleted node is " + deletedNode.data);
+        System.out.println("is node found? " + found);
+
     }
 }

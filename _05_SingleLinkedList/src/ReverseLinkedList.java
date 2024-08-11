@@ -1,27 +1,34 @@
-public class DeleteLastNode {
+public class ReverseLinkedList {
 
     private static ListNode head;
     private  static ListNode second;
     private  static ListNode third;
     private  static ListNode fourth;
 
-    private static  ListNode deleteLastNode(){
+    public static  ListNode reverseLinkedList(){
 
-
-        if(head == null || head.next == null){
+        if(head == null){
             return head;
         }
 
+
+
         ListNode current = head;
         ListNode previous = null;
-        while(current.next != null){
+        ListNode next = null;
+
+        while(current != null){
+
+            next = current.next;
+            current.next = previous;
             previous = current;
-            current = current.next;
+            current = next;
+
         }
 
-        previous.next = null;
-        return  current;
+        return  previous;
     }
+
 
     public static void main(String[] args) {
         PrintLinkedListElements print = new PrintLinkedListElements();
@@ -38,8 +45,11 @@ public class DeleteLastNode {
         second.next = third; // // 10 -> 1 -> 8
         third.next = fourth; // // 10 -> 1 -> 8 -> 11 -> null
 
-       ListNode deletedNode = deleteLastNode();
-        print.printLinkedListElements(head);
-        System.out.println("deleted node is " + deletedNode.data);
+      //  ListNode newHead = reverseLinkedList();
+
+       // print.printLinkedListElements(newHead);
+        reverseLinkedList();
+        print.printLinkedListElements(fourth);
+
     }
 }

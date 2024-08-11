@@ -1,27 +1,48 @@
-public class DeleteLastNode {
+public class DeleteAtAnyPosition {
 
     private static ListNode head;
     private  static ListNode second;
     private  static ListNode third;
     private  static ListNode fourth;
 
-    private static  ListNode deleteLastNode(){
+    public static  ListNode deleteAtAnyPosition(int position){
 
 
         if(head == null || head.next == null){
             return head;
         }
 
-        ListNode current = head;
-        ListNode previous = null;
-        while(current.next != null){
-            previous = current;
-            current = current.next;
+
+
+        if(position == 1){
+            ListNode deletedNode = head;
+            ListNode temp = head.next;
+            head.next = null;
+            head = temp;
+
+            return deletedNode;
         }
 
-        previous.next = null;
+        int curPosition = 1;
+        ListNode current = head;
+        ListNode previous = null;
+
+        while (current.next != null) {
+
+            if(curPosition == position) break;
+
+            previous = current;
+            current = current.next;
+            curPosition++;
+        }
+
+        previous.next = current.next;
+        current.next = null;
         return  current;
+
+
     }
+
 
     public static void main(String[] args) {
         PrintLinkedListElements print = new PrintLinkedListElements();
@@ -38,8 +59,9 @@ public class DeleteLastNode {
         second.next = third; // // 10 -> 1 -> 8
         third.next = fourth; // // 10 -> 1 -> 8 -> 11 -> null
 
-       ListNode deletedNode = deleteLastNode();
+        ListNode deletedNode = deleteAtAnyPosition(2);
         print.printLinkedListElements(head);
-        System.out.println("deleted node is " + deletedNode.data);
+        System.out.println("deleted node is " + deletedNode);
+        System.out.println(head);
     }
 }

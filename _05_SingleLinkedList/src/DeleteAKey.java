@@ -1,27 +1,30 @@
-public class DeleteLastNode {
+public class DeleteAKey {
 
     private static ListNode head;
     private  static ListNode second;
     private  static ListNode third;
     private  static ListNode fourth;
 
-    private static  ListNode deleteLastNode(){
 
-
-        if(head == null || head.next == null){
-            return head;
-        }
+    public static void deleteAKey(int key){
 
         ListNode current = head;
         ListNode previous = null;
-        while(current.next != null){
+
+
+
+
+
+
+        while(current.next != null  && current.data != key){
             previous = current;
             current = current.next;
         }
 
-        previous.next = null;
-        return  current;
+        previous.next = current.next;
+        current.next = null;
     }
+
 
     public static void main(String[] args) {
         PrintLinkedListElements print = new PrintLinkedListElements();
@@ -38,8 +41,11 @@ public class DeleteLastNode {
         second.next = third; // // 10 -> 1 -> 8
         third.next = fourth; // // 10 -> 1 -> 8 -> 11 -> null
 
-       ListNode deletedNode = deleteLastNode();
+        deleteAKey(11);
+
         print.printLinkedListElements(head);
-        System.out.println("deleted node is " + deletedNode.data);
+
+        System.out.println(head);
+        System.out.println(third);
     }
 }
