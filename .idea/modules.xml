@@ -8,6 +8,9 @@
       <module fileurl="file://$PROJECT_DIR$/_03_BinarySearch/_03_BinarySearch.iml" filepath="$PROJECT_DIR$/_03_BinarySearch/_03_BinarySearch.iml" />
       <module fileurl="file://$PROJECT_DIR$/_04_Arrays/_04_Arrays.iml" filepath="$PROJECT_DIR$/_04_Arrays/_04_Arrays.iml" />
       <module fileurl="file://$PROJECT_DIR$/_05_SingleLinkedList/_05_SingleLinkedList.iml" filepath="$PROJECT_DIR$/_05_SingleLinkedList/_05_SingleLinkedList.iml" />
+      <module fileurl="file://$PROJECT_DIR$/_06_DoubleLinkedList/_06_DoubleLinkedList.iml" filepath="$PROJECT_DIR$/_06_DoubleLinkedList/_06_DoubleLinkedList.iml" />
+      <module fileurl="file://$PROJECT_DIR$/_07_CircularLinkedList/_07_CircularLinkedList.iml" filepath="$PROJECT_DIR$/_07_CircularLinkedList/_07_CircularLinkedList.iml" />
+      <module fileurl="file://$PROJECT_DIR$/_08_Stacks/_08_Stacks.iml" filepath="$PROJECT_DIR$/_08_Stacks/_08_Stacks.iml" />
     </modules>
   </component>
 </project>
