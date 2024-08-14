@@ -11,6 +11,9 @@
       <module fileurl="file://$PROJECT_DIR$/_06_DoubleLinkedList/_06_DoubleLinkedList.iml" filepath="$PROJECT_DIR$/_06_DoubleLinkedList/_06_DoubleLinkedList.iml" />
       <module fileurl="file://$PROJECT_DIR$/_07_CircularLinkedList/_07_CircularLinkedList.iml" filepath="$PROJECT_DIR$/_07_CircularLinkedList/_07_CircularLinkedList.iml" />
       <module fileurl="file://$PROJECT_DIR$/_08_Stacks/_08_Stacks.iml" filepath="$PROJECT_DIR$/_08_Stacks/_08_Stacks.iml" />
+      <module fileurl="file://$PROJECT_DIR$/_09_Queues/_09_Queues.iml" filepath="$PROJECT_DIR$/_09_Queues/_09_Queues.iml" />
+      <module fileurl="file://$PROJECT_DIR$/_10_BinaryTrees/_10_BinaryTrees.iml" filepath="$PROJECT_DIR$/_10_BinaryTrees/_10_BinaryTrees.iml" />
+      <module fileurl="file://$PROJECT_DIR$/_11_BinarySearchTree/_11_BinarySearchTree.iml" filepath="$PROJECT_DIR$/_11_BinarySearchTree/_11_BinarySearchTree.iml" />
     </modules>
   </component>
 </project>
