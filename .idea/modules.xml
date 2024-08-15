@@ -14,6 +14,8 @@
       <module fileurl="file://$PROJECT_DIR$/_09_Queues/_09_Queues.iml" filepath="$PROJECT_DIR$/_09_Queues/_09_Queues.iml" />
       <module fileurl="file://$PROJECT_DIR$/_10_BinaryTrees/_10_BinaryTrees.iml" filepath="$PROJECT_DIR$/_10_BinaryTrees/_10_BinaryTrees.iml" />
       <module fileurl="file://$PROJECT_DIR$/_11_BinarySearchTree/_11_BinarySearchTree.iml" filepath="$PROJECT_DIR$/_11_BinarySearchTree/_11_BinarySearchTree.iml" />
+      <module fileurl="file://$PROJECT_DIR$/_12_SomeQuestions/_12_SomeQuestions.iml" filepath="$PROJECT_DIR$/_12_SomeQuestions/_12_SomeQuestions.iml" />
+      <module fileurl="file://$PROJECT_DIR$/_13_PriorityQueueAndBinaryHeap/_13_PriorityQueueAndBinaryHeap.iml" filepath="$PROJECT_DIR$/_13_PriorityQueueAndBinaryHeap/_13_PriorityQueueAndBinaryHeap.iml" />
     </modules>
   </component>
 </project>
