@@ -1,3 +1,5 @@
+import java.util.Arrays;
+
 public class MaxPriorityQueue {
 
     Integer[] heap;
@@ -47,8 +49,74 @@ public class MaxPriorityQueue {
         }
     }
 
+    public void deleteMax(){
+        //in a Max heap, the largest value will always be at index 1 of the array.... read the readme.md file
+        int max = heap[1];
+        int min = heap[n];
+
+        heap[1] = min;
+        heap[n] = max;
+        heap[n] = null;
+
+        // number of elements in the array have reduced
+        n--;
+
+        sink(1);
+
+        //resize the array after deleting an element
+        if( n > 0 && (n == (heap.length-1)/4 ) ){
+            resize(heap.length / 2);
+        }
+
+
+    }
+
+    public void sink(int k){
+        // read the readme.md file
+
+        // we keep swapping until a node is not more larger than its children
+        while(  (heap[k] <= heap[2*k] || heap[k] <= heap[2*k+1])){
+
+            int childOneIndex = 2*k;
+            int childTwoIndex = 2*k+1;
+
+            int largestChildIndex = heap[childOneIndex] > heap[childTwoIndex] ? childOneIndex : childTwoIndex;
+
+           // if( heap[k] < heap[largestChildIndex]){
+                //swap
+                int temp = heap[k];
+                heap[k] = heap[largestChildIndex];
+                heap[largestChildIndex] = temp;
+           // }
+
+
+            k = largestChildIndex;
+
+            // out of bounds and remember we dont store anything at index 0 of the heap array
+            if( k*2 > heap.length - 1 || 2*k+1 > heap.length - 1  ) break;
+
+            // no need to check null elements my boy
+            if( heap[k*2] == null || heap[2*k+1] == null) break;
+
+        }
+
+
+    }
+
+
+
+
+
     public static void main(String[] args) {
         MaxPriorityQueue pq = new MaxPriorityQueue(3);
+
+        /***           //what the tree will look like after inserting
+         *                                 6
+         *                               /    \
+         *                              5       3
+         *                             /  \    / \
+         *                            4    1   2
+         * */
 
         pq.insert(4);
         pq.insert(5);
@@ -60,8 +128,19 @@ public class MaxPriorityQueue {
 
 
 
-        System.out.println(pq.size());
-        System.out.println(pq.isEmpty());
+       // System.out.println(pq.size());
+      //  System.out.println(pq.isEmpty());
+       pq.deleteMax();
+
+        /***           //what the tree will look like after deleting 6 and running the sink method on the tree
+         *                                 5
+         *                               /    \
+         *                              4       3
+         *                             /  \    / \
+         *                            2   1
+         * */
+
+        System.out.println(Arrays.toString(pq.heap));
 
     }
 }

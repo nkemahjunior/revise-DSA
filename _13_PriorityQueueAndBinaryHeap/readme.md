@@ -94,8 +94,8 @@ After deleting an element from heap, it may not satisfy heap properties. Thus, w
 we adjust the locations of elements to satisfy heap property.
 
 ### Example
- deleteMax() in this tree.. and the max is 9.  To delete we swap 9 and the last element in the array which will be 4. Then we can
-safely from 9. we're doing this so we don't end up with an incomplete binary tree.
+ deleteMax() in this tree.. and the max is 9.  To delete, we swap 9 and the last element in the array which will be 4. Then we can
+safely remove 9. we're doing this so we don't end up with an incomplete binary tree.
 
                                              9
                                          /       \
@@ -103,11 +103,15 @@ safely from 9. we're doing this so we don't end up with an incomplete binary tre
                                      /   \        /  \
                                     2     1      5    4
 
+
+
                                               4
                                          /       \
                                        3           6
                                      /   \        /  \
                                     2     1      5    9
+
+
 
                                               4
                                          /       \
@@ -116,4 +120,15 @@ safely from 9. we're doing this so we don't end up with an incomplete binary tre
                                     2     1      5    
 
 okay so we have deleted 9,  but our tree does not satisfy the properties of a max heap , because look at where 4 is, 4 is smaller
-than one of its children (6)
+than one of its children (6)... 
+To put 4 in its correct position : 
+- compare its children ( 3 and 6), and 6 is greater
+- we compare 4 and 6, 6 is greater, so we swap their positions
+- we keep repeating this process until 4 is at the right position.
+- our tree finally looks like this
+
+                                              6
+                                         /       \
+                                       3           5
+                                     /   \        /  
+                                    2     1      4    
