@@ -1,3 +1,5 @@
+import java.util.Arrays;
+
 /**
  * INSERTION SORT
  * <p>
@@ -60,5 +62,12 @@ public class InsertionSort {
 
             arr[j+1] = temp;
         }
+
+        System.out.println(Arrays.toString(arr));
+    }
+
+    public static void main(String[] args) {
+
+        sort(new int[]{3 , 1, 5, 2, 6, 4});
     }
 }
