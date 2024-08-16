@@ -53,7 +53,7 @@ public class InsertionSort {
         for (int i = 1; i < arr.length; i++){
 
             int temp = arr[i];
-            int j = i - 1;// points to the last element in unsorted part.. we will update this variable in the while loop
+            int j = i - 1;// points to the last element in the sorted part... we will update this variable in the while loop
 
             while (j >= 0 && arr[j] > temp){
                 arr[j + 1] = arr[j]; // shifting element in the unsorted part, one position forward
