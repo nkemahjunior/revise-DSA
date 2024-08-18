@@ -6,8 +6,8 @@ public class AdjacencyGraphLinkedListRepresentation {
 
     LinkedList<Integer> [] adj;
 
-    private int V; // number of vertices in graph
-    private  int E; //number of edges in the graph
+    protected int V; // number of vertices in graph
+    protected   int E; //number of edges in the graph
 
 
 
@@ -35,10 +35,10 @@ public class AdjacencyGraphLinkedListRepresentation {
 
         StringBuilder sb = new StringBuilder();
 
-        sb.append(V + " vertices, "+ E + " edges " + "\n" );
+        sb.append(V).append(" vertices, ").append(E).append(" edges ").append("\n");
 
         for (int v = 0; v < V; v++){
-            sb.append( v + ": ");
+            sb.append(v).append(": ");
 
             for (int w : adj[v]){
                 sb.append(w + " ");
