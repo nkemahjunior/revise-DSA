@@ -26,7 +26,7 @@ public class BfsTraversalForUndirectedGraphs {
             System.out.println(u + " ");
 
             // looping through the vertices of each linked list at a particular index, u
-            for(int v : adjacencyGraph.adj[u]){
+            for(int v : adjacencyGraph.adj[u]){//for each loop
                 if(!visited[v]){
                     visited[v] = true;
                     q.offer(v);
