@@ -18,6 +18,7 @@
       <module fileurl="file://$PROJECT_DIR$/_13_PriorityQueueAndBinaryHeap/_13_PriorityQueueAndBinaryHeap.iml" filepath="$PROJECT_DIR$/_13_PriorityQueueAndBinaryHeap/_13_PriorityQueueAndBinaryHeap.iml" />
       <module fileurl="file://$PROJECT_DIR$/_14_searchingAndSort/_14_searchingAndSort.iml" filepath="$PROJECT_DIR$/_14_searchingAndSort/_14_searchingAndSort.iml" />
       <module fileurl="file://$PROJECT_DIR$/_15_Graphs/_15_Graphs.iml" filepath="$PROJECT_DIR$/_15_Graphs/_15_Graphs.iml" />
+      <module fileurl="file://$PROJECT_DIR$/_16_Hashing/_16_Hashing.iml" filepath="$PROJECT_DIR$/_16_Hashing/_16_Hashing.iml" />
     </modules>
   </component>
 </project>
