@@ -20,6 +20,7 @@
       <module fileurl="file://$PROJECT_DIR$/_15_Graphs/_15_Graphs.iml" filepath="$PROJECT_DIR$/_15_Graphs/_15_Graphs.iml" />
       <module fileurl="file://$PROJECT_DIR$/_16_Hashing/_16_Hashing.iml" filepath="$PROJECT_DIR$/_16_Hashing/_16_Hashing.iml" />
       <module fileurl="file://$PROJECT_DIR$/_17_IntervalsAndOverLappingIntervals/_17_IntervalsAndOverLappingIntervals.iml" filepath="$PROJECT_DIR$/_17_IntervalsAndOverLappingIntervals/_17_IntervalsAndOverLappingIntervals.iml" />
+      <module fileurl="file://$PROJECT_DIR$/_18_Trie/_18_Trie.iml" filepath="$PROJECT_DIR$/_18_Trie/_18_Trie.iml" />
     </modules>
   </component>
 </project>

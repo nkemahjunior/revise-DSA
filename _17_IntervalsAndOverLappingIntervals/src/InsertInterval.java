@@ -53,6 +53,8 @@ public class InsertInterval {
 
     public static void main(String[] args) {
 
+
+
         List<Interval> intervals = new LinkedList<>();
         intervals.add(new Interval(1, 3));
         intervals.add(new Interval(5, 7));
