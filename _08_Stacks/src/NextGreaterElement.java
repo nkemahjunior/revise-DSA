@@ -9,7 +9,8 @@ public class NextGreaterElement {
     // input = [4,7,3,4,8,1]
     //output=[7, 8, 4 8, -1, -1 ]
 
-
+ //my implementation
+    //check the video to see how you can solve this problem using stacks
     public static void main(String[] args) {
 
         int[] input = {4,7,3,4,8,1};
