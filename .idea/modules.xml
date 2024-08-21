@@ -21,6 +21,7 @@
       <module fileurl="file://$PROJECT_DIR$/_16_Hashing/_16_Hashing.iml" filepath="$PROJECT_DIR$/_16_Hashing/_16_Hashing.iml" />
       <module fileurl="file://$PROJECT_DIR$/_17_IntervalsAndOverLappingIntervals/_17_IntervalsAndOverLappingIntervals.iml" filepath="$PROJECT_DIR$/_17_IntervalsAndOverLappingIntervals/_17_IntervalsAndOverLappingIntervals.iml" />
       <module fileurl="file://$PROJECT_DIR$/_18_Trie/_18_Trie.iml" filepath="$PROJECT_DIR$/_18_Trie/_18_Trie.iml" />
+      <module fileurl="file://$PROJECT_DIR$/_19_DynamicProgramming/_19_DynamicProgramming.iml" filepath="$PROJECT_DIR$/_19_DynamicProgramming/_19_DynamicProgramming.iml" />
     </modules>
   </component>
 </project>
