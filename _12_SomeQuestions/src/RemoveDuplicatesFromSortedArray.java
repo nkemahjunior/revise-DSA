@@ -15,7 +15,7 @@ public class RemoveDuplicatesFromSortedArray {
         for(int j =1; j < nums.length; j++){
 
             //we have found a unique element
-            if( nums[j - 1] != nums[j]){
+            if( nums[i - 1] != nums[j]){
                 nums[i] = nums[j];
                 i++;
             }
