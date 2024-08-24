@@ -43,19 +43,3 @@ public class RemoveDuplicatesFromSortedArray {
         System.out.println(ans);
     }
 }
-
-/**
- *
- System.out.println(" ");
- System.out.println("start ");
- System.out.println( " i = "+i +  " j = "+j +  " k = "+k + " seen = "+seen);
- System.out.println(Arrays.toString(arr));
-
-
-
-
- System.out.println(" ");
- System.out.println("At the end ");
- System.out.println( " i = "+i +  " j = "+j +  " k = "+k + " seen = "+seen);
- System.out.println(Arrays.toString(arr));
- */
