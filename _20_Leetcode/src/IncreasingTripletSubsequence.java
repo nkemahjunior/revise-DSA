@@ -21,7 +21,7 @@
  */
 public class IncreasingTripletSubsequence {
 
-    public boolean increasingTriplet(int[] nums) {
+    public static boolean increasingTriplet(int[] nums) {
 
         /***
          * The algorithm relies on the fact that if there is an increasing triplet in the array, there must be two values, a and b,
