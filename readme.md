@@ -1,5 +1,5 @@
 # Data structures and algorithms
-###### Reference( Youtube- free code camp): https://www.youtube.com/watch?v=2ZLl8GAk1X4&t=2646s
+###### Reference(Youtube- free code camp): https://www.youtube.com/watch?v=2ZLl8GAk1X4&t=2646s 
 
 ## Types of data structures
 - ### Linear Data structures
