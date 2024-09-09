@@ -29,6 +29,36 @@ public class RemoveNodesFromLinkedList {
     }
 
 
+    // solution:  not really efficient but better
+    // place elements in stack, but before placing the element in the stack, check if its greater than the current top of stack
+    // if its greater keep popping untill the element is not more greater than top of stack, then add the element to the stack
+    //
+    // After create a linked list by popping the elements in the stack
+    public static ListNode removeNodesEfficient(ListNode head) {
+
+        Stack<ListNode> stack = new Stack<>();
+        ListNode temp = head.next;
+        stack.push(head);
+
+        while (temp != null ){
+            while (!stack.isEmpty() &&  temp.val > stack.peek().val ){
+                stack.pop();
+            }
+            stack.push(temp);
+            temp = temp.next;
+        }
+
+        ListNode cur = null;
+        while(!stack.empty()){
+            ListNode temp2 = cur;
+            cur = stack.pop();
+            cur.next = temp2;
+        }
+
+        return cur;
+    }
+
+
     // solution: not really efficient
     // place elements in stack, but before placing the element in the stack, check if its greater than the current top of stack
     // if its greater keep popping untill the element is not more greater than top of stack, then add the element to the stack
@@ -77,7 +107,8 @@ public class RemoveNodesFromLinkedList {
         head.next.next.next = new ListNode(3);
         head.next.next.next.next = new ListNode(8);
 
-        removeNodes(head);
+        //removeNodes(head);
+        removeNodesEfficient(head);
 
     }
 }
